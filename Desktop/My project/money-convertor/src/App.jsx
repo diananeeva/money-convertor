@@ -1,6 +1,6 @@
 import React from "react";
 import MoneyConvertor from "./components/MoneyConvertor";
-import ExchangeRateChart from "./components/charts/ExchangeRateChart"; // Импортиране на диаграмата
+import ExchangeRateChart from "./components/charts/ExchangeRateChart"; 
 import { Container, Box, Typography } from "@mui/material";
 
 function App() {
@@ -8,34 +8,34 @@ function App() {
     <Box
       sx={{
         height: "100vh",
-        backgroundImage: "url('/images/digital.avif')", // Фоново изображение
+        backgroundImage: "url('./images/digital.avif')", 
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: 2, // Добавете padding, за да не е твърде близо до краищата
+        padding: 2, 
       }}
     >
       <Container
-        maxWidth="lg" // Увеличавам ширината на контейнера за повече място
+        maxWidth="lg" 
         sx={{
           display: "flex",
-          justifyContent: "space-between", // Разпределяне на съдържанието
+          justifyContent: "space-between", 
           alignItems: "center",
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
+          backgroundColor: "rgba(255, 255, 255, 0.6)",
           padding: "40px",
           borderRadius: "8px",
-          boxShadow: 3, // Добавяне на малка сянка за по-добър ефект
+          boxShadow: 3, 
         }}
       >
-        {/* Лявата част с конвертора */}
+        
         <Box sx={{ flex: 1, paddingRight: 2 }}>
           <MoneyConvertor />
         </Box>
 
-        {/* Дясната част с диаграмата */}
+       
         <Box sx={{ flex: 1 }}>
           <ExchangeRateChart />
         </Box>
